@@ -1,3 +1,10 @@
+## Create vite-react-app
+-Create react app
+-Configure Tailwind CSS
+-Header
+-Login Form
+-Sign Up
+
 ## Login in / Sign up
     -sign in / sign up form
     - redirect to browse page
