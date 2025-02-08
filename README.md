@@ -13,6 +13,12 @@
 -create redux store with userSlice
 -implement dispatch actions to redux store for sign in and sign out
 -bugfix : if the user is not logged in redirect to / and vice versa
+-get api from tmdb api
+-custom hook for nowplayingmovies
+-update store with movies data
+-planning for main and secondary container
+-fetch data for trailer video and update the store with trailer data
+-embedded youtbe video and make it run
 
 
 

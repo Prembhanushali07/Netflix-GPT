@@ -1,7 +1,7 @@
-const secondaryContainer = () => {
+const SecondaryContainer = () => {
   return (
     <div>secondaryContainer</div>
   )
 }
 
-export default secondaryContainer
+export default SecondaryContainer
