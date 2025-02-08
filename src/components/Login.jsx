@@ -3,7 +3,6 @@ import { checkValidateData } from "../utils/validate";
 import { useRef, useState } from "react";
 import { createUserWithEmailAndPassword , signInWithEmailAndPassword,updateProfile} from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { Navigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 
@@ -19,7 +18,7 @@ const Login = () => {
   const toggleSignInForm = () => {
     setisSignInForm(!isSignInForm);
   };
-  const handleButtonClick = (e) => {
+  const handleButtonClick = () => {
     let authValidateForm;
     if (fullnameref.current && fullnameref.current.value) {
       authValidateForm = checkValidateData(emailref.current.value, passwordref.current.value, fullnameref.current.value);
@@ -46,7 +45,6 @@ const Login = () => {
             const {uid,email,displayName, photoURL} = auth.currentUser;
             console.log(auth.currentUser);
             Dispatch(addUser({uid:uid,email:email,displayName:displayName,photoURL:photoURL}));
-            Navigate("/browse");
           })
           .catch((error) => {
             setErrorMessage(error.message);
