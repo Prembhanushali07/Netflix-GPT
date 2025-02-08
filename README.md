@@ -12,8 +12,6 @@
 -setup sign in / sign up form of user
 -create redux store with userSlice
 -implement dispatch actions to redux store for sign in and sign out
-
-
 ## Login in / Sign up
     -sign in / sign up form
     - redirect to browse page
